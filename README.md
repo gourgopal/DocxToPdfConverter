@@ -72,3 +72,36 @@ User->>+Azure AD: Initiate login
 Azure AD->>+User: Provide credentials
 Azure AD->>
 ```
+
+# DOCX to PDF Conversion: Limitations & Enterprise Solutions
+## Microsoft Graph API Limitations
+```graph TD
+    A[Graph API Timeout] --> B[45-60 seconds]
+    B --> C[File Complexity]
+    C --> D[Images/Tables]
+    C --> E[Large File Size]
+    B --> F[Server Load]
+```
+### Key Constraints:
+- Timeout: 45-60 seconds for complex documents
+- File Size: Max 250MB (practical limit <50MB for reliable conversion)
+- Throughput: ~10 requests/minute (organizational accounts)
+
+## Alternative Solutions Matrix
+|          Solution         |    Cost   | Timeout | Scalability | Setup Complexity |
+|:-------------------------:|:---------:|:-------:|:-----------:|:----------------:|
+| LibreOffice Headless      | Free      | None    | High        | Medium           |
+| Azure Functions + PDFTron | $$        | 10min   | High        | High             |
+| Google Docs API           | $0.05/doc | 60s     | Medium      | Low              |
+| Aspose.Words Cloud        | $0.15/doc | None    | High        | Low              |
+
+## Recommended Implementation: LibreOffice in Azure Container
+```
+[Azure Queue Storage] → [Azure Function] → [LibreOffice Container] → [Blob Storage]
+```
+### Sample Cost Comparison (Monthly):
+|   Solution  | 72,000 docs | Reliability |  Support  | Setup Complexity |
+|:-----------:|:-----------:|:-----------:|:---------:|:----------------:|
+| LibreOffice | $300        | Medium      | Community | Medium           |
+| Aspose      | $10,800     | High        | 24/7      | High             |
+| Adobe       | $3,600      | High        | Business  | Low              |

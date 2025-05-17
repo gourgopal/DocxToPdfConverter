@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocxToPdfConverter", "DocxToPdfConverter.csproj", "{570BE0FB-ED73-D508-2E7F-3C98361D7F30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{570BE0FB-ED73-D508-2E7F-3C98361D7F30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{570BE0FB-ED73-D508-2E7F-3C98361D7F30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{570BE0FB-ED73-D508-2E7F-3C98361D7F30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{570BE0FB-ED73-D508-2E7F-3C98361D7F30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95391A82-D830-40BD-BBE7-E7351B19978F}
+	EndGlobalSection
+EndGlobal

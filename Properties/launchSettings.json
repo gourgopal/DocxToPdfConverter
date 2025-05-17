@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DocxToPdfConverter": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\GouraGopalDalai\\Downloads\\ValuationReport_V2G-V65V-V5F_ASHARMERACPHASEI_ASHARMERACPHASEI_13May2025_023320.docx\" \"C:\\Users\\GouraGopalDalai\\Downloads\\ValuationReport_V2G-V65V-V5F_ASHARMERACPHASEI_ASHARMERACPHASEI_17May2025_023320.pdf\""
+    }
+  }
+}

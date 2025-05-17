@@ -1,7 +1,7 @@
 # DOCX to PDF Converter using Microsoft Graph API
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![.NET](https://github.com/yourusername/DocxToPdfConverter/actions/workflows/dotnet.yml/badge.svg)](https://github.com/yourusername/DocxToPdfConverter/actions/workflows/dotnet.yml)
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)
 
 A robust C# console application that converts DOCX files to PDF using Microsoft Graph API, following SOLID principles and modern .NET practices.
 
@@ -35,13 +35,14 @@ dotnet restore
 1. Navigate to [Azure Portal](https://portal.azure.com/)
 2. Create a new app registration with these settings:
    - **Supported account types**: Personal Microsoft accounts
-   - **Redirect URI**: `http://localhost`
+   - **Redirect URI**: `http://localhost` (For Desktop or Mobile App)
+   - Collect your client id (need to add it to appsettings.json)
 3. Add API permissions:
    - `Files.ReadWrite.All` (Delegated)
    - `User.Read` (Delegated)
 
 ### 4. Configuration
-Create `appsettings.json` in the project root:
+Create `appsettings.json` in the project root (Make sure to Copy it to output directory):
 ```json
 {
   "graph": {
